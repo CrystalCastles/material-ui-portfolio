@@ -5,9 +5,10 @@ import PortfolioSection from './containers/PortfolioSection';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faLinkedin)
+library.add(faLinkedinIn, faEnvelope)
 
 function App() {
   return (
