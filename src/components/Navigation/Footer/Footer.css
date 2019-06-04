@@ -1,0 +1,11 @@
+.Footer {
+  
+}
+
+.Icon {
+  transition: all 0.3s;
+}
+
+.Icon:hover {
+  transform: scale(1.5);
+}

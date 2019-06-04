@@ -12,6 +12,10 @@
   margin-top: 0px;
 }
 
+.ModalContent p {
+  font-size: 18px;
+}
+
 .ModalContent a {
   color: rgb(43, 43, 255);
   text-decoration: none;

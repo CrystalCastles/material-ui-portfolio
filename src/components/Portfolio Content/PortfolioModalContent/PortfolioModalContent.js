@@ -11,11 +11,10 @@ const portfolioModalContent = ( props ) => {
       <img src={props.image}></img>
       <p>{props.desc1}</p>
       <p>{props.desc2}</p>
-      <Button variant="outlined" color="primary">
-        <a href={props.link} rel="noopener noreferrer" target="_blank">VISIT SITE</a>
+      <Button variant="outlined" color="primary" href={props.link} rel="noopener noreferrer" target="_blank">
+        VISIT SITE
       </Button>
     </div>
-
   )
 }
 

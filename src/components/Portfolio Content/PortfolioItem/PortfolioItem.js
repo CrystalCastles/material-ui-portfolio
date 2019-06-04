@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import classes from './PortfolioItem.css';
 import Modal from '@material-ui/core/Modal';
 import Slide from '@material-ui/core/Slide';
+import Grow from '@material-ui/core/Grow';
 import PortfolioModalContent from '../PortfolioModalContent/PortfolioModalContent';
 
 class PortfolioItem extends Component {
@@ -25,7 +26,7 @@ class PortfolioItem extends Component {
       <div>
         { this.props.portfolioEntry ? (
           <div>
-          <Slide direction="up" in={true} mountOnEnter unmountOnExit>
+          <Grow timeout={1500} in={true} mountOnEnter unmountOnExit>
             <Card className={classes.Card}>
               <CardActionArea onClick={this.handleOpen}>
                 <CardMedia className={classes.CardMedia} 
@@ -34,18 +35,18 @@ class PortfolioItem extends Component {
                 />
               </CardActionArea>
             </Card>
-          </Slide>
+          </Grow>
           <Modal className={classes.Modal}
             open={this.state.open}
             onClose={this.handleClose}
           >
             <Slide direction="up" in={this.state.open} mountOnEnter unmountOnExit>
-            <PortfolioModalContent title={this.props.portfolioEntry.fields.portfolioEntryTitle}
-                desc1={this.props.portfolioEntry.fields.portfolioEntryDescription.content[0].content[0].value}
-                desc2={this.props.portfolioEntry.fields.portfolioEntryDescription.content[1].content[0].value}
-                link={this.props.portfolioEntry.fields.portfolioEntryLink}
-                image={this.props.portfolioEntry.fields.portfolioEntryImage.fields.file.url}
-            />
+              <PortfolioModalContent title={this.props.portfolioEntry.fields.portfolioEntryTitle}
+                  desc1={this.props.portfolioEntry.fields.portfolioEntryDescription.content[0].content[0].value}
+                  desc2={this.props.portfolioEntry.fields.portfolioEntryDescription.content[1].content[0].value}
+                  link={this.props.portfolioEntry.fields.portfolioEntryLink}
+                  image={this.props.portfolioEntry.fields.portfolioEntryImage.fields.file.url}
+              />
             </Slide>
           </Modal>
           </div>

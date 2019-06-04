@@ -1,0 +1,25 @@
+.ProfileSection {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.Github {
+  width: 63%;
+}
+
+.ImgContainer {
+  height: 277px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.ImgContainer:hover {
+  transform: scale(1.1);
+}
