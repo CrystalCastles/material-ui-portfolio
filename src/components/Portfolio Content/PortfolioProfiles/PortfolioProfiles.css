@@ -10,7 +10,7 @@ img {
 }
 
 .Github {
-  width: 63%;
+  width: 250px;
 }
 
 .ImgContainer {
@@ -22,4 +22,16 @@ img {
 
 .ImgContainer:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1279px) {
+  img {
+   width: 300px;
+  }
+}
+
+@media (max-width: 599px) {
+  .ImgContainer {
+    height: 220px;
+  }
 }
