@@ -1,9 +1,10 @@
 .AppBar {
   box-shadow: none !important;
   align-items: center;
+  background-color: black;;
 }
 
 .Typography {
   font-family: 'Contrail One' !important;
-  font-size: 32px !important;
+  font-size: 28px !important;
 }

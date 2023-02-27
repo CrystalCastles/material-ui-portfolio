@@ -6,15 +6,13 @@ import classes from './NavBar.css'
 
 const navBar = () => {
   return (
-    <div>
-      <AppBar className={classes.AppBar} position="static" color="inherit">
-        <Toolbar>
-          <Typography className={classes.Typography} variant="title" color="inherit">
-            dp
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <AppBar className={classes.AppBar} position="static" color="inherit">
+      <Toolbar>
+        <Typography className={classes.Typography} variant="title" color="inherit">
+          daniel pichardo
+        </Typography>
+      </Toolbar>
+    </AppBar>
   )
 }
 

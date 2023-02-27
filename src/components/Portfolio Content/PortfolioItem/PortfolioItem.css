@@ -2,8 +2,8 @@
   max-width: 1000px;
   margin: 20px auto;
   position: relative;
-  border-width: 3px;
-  padding: 3px;
+  border-bottom-width: 4px;
+  padding-bottom: 4px;
 }
 
 .Card:after {

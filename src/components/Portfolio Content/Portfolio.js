@@ -81,7 +81,7 @@ class Portfolio extends Component {
             </Grid>
           </div>
         ) : "No portfolio items found" }
-        <PortfolioProfiles />
+        {/* <PortfolioProfiles /> */}
       </div>
     )
   }

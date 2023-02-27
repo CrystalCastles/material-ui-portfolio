@@ -19,8 +19,9 @@ class Footer extends Component {
 
     return (
       <BottomNavigation className={classes.Footer} value={value} onChange={this.handleChange}>
+        <BottomNavigationAction href="https://www.github.com/crystalcastles" rel="noopener noreferrer" target="_blank" label="Github" value="Github" icon={<FontAwesomeIcon  className={classes.Icon} icon={['fab', 'github']} size="lg" />} />
         <BottomNavigationAction href="https://www.linkedin.com/in/danpichardo/" rel="noopener noreferrer" target="_blank" label="LinkedIn" value="LinkedIn" icon={<FontAwesomeIcon  className={classes.Icon} icon={['fab', 'linkedin-in']} size="lg" />} />
-        <BottomNavigationAction href="https://www.twitter.com/undeadburg" rel="noopener noreferrer" target="_blank" label="Twitter" value="Twitter" icon={<FontAwesomeIcon className={classes.Icon} icon={['fab', 'twitter']} size="lg" />} />
+        {/* <BottomNavigationAction href="https://www.twitter.com/" rel="noopener noreferrer" target="_blank" label="Twitter" value="Twitter" icon={<FontAwesomeIcon className={classes.Icon} icon={['fab', 'twitter']} size="lg" />} /> */}
         <BottomNavigationAction href="mailto:danielpichardo716@gmail.com" label="Email" value="Email" icon={<FontAwesomeIcon className={classes.Icon} icon={['far', 'envelope']}  size="lg"/>} />
       </BottomNavigation>
     )
